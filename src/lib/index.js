@@ -1,4 +1,4 @@
-'use strict'
+g'use strict'
 import {barsEvent} from "./js/header_nav/nav_toggle";
 barsEvent();
 
