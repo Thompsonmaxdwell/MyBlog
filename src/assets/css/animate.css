@@ -94,3 +94,15 @@
 
     }
 }
+
+@keyframes welcome_Text_left{
+    0%{left:-1000px;}
+    50%{left: 0px;transform:translateX(100px)}
+    100%{transform:translateX(0px)}
+}
+
+@keyframes welcome_Text_right{
+    0%{right:-1000px;}
+    50%{right: 0px;transform:translateX(-100px)}
+    100%{transform:translateY(0px)}
+}

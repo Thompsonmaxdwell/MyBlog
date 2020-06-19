@@ -6,3 +6,7 @@ node_modules/
 /firebase
 /firebase/
 firebase/
+/functions
+functions/
+functions
+firebase-debug.log

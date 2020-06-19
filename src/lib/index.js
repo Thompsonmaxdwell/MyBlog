@@ -11,12 +11,20 @@ import{logInEvent} from './js/auth/login'
 import {register_Event} from './js/auth/register';
 import {logOut_Event} from './js/auth/signOut'
 
+
+
 import {user_auth} from './js/auth/userAuth'
 user_auth.change()
 import {db}  from  './js/firebase/initialize_firebase'
 import{dataFromDatabase} from './js/data/userPost_news'
+import{adminFunction,Admin_li_fun} from './js/auth/user_Admin'
+import{Moderator_li_fun, toggle_Moderator_fun} from './js/auth/user_Moderator'
 
- let get_comment_form = news_card.querySelectorAll('.comment_form');
+// initialize login event
+logInEvent();
+register_Event();
+
+  let get_comment_form = news_card.querySelectorAll('.comment_form');
 
 
  get_comment_form.forEach(element => {
@@ -35,3 +43,7 @@ import{dataFromDatabase} from './js/data/userPost_news'
      })
      
  });
+
+ 
+
+

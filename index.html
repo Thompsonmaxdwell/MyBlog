@@ -17,55 +17,40 @@
         <main>
            <div class="main_container">
                 <!-- header -->
-              <div class="side_bar">
+              <div class="side_bar_wrapper">
                 <header>
                     <div class="header_container">
                         <div class="logo"><h1>logo</h1></div>
                         
-                        <nav class="nav nav_hide">
-                            <ul class="nav_ul">
-                                 <li class="logged_in dashboard_dropdown">
-                                     <a href="#" class="dashboard"><i class="fas fa-database"></i>  Dashboard</a>
-                                     <div class="dropdown">
-                                        <a href="#" class="uid"></a>
-                                        <a href="#" class="user_email"></a>
-                                     </div>
-                                </li>
-                                <li class="logged_in">
-                                        <input type="file"  id="user_profile">
-                                </li>
-                                <li class="logged_in">
-                                   <a href="#"><i class="fa fa-user"></i> User</a>
-                                </li>   
-                                <li>
-                                    <a href="#"><i class="fa fa-home"></i> Home</a>
-                               </li>     
-                                <li>
-                                    <a href="#"><i class="fa fa-blog"></i> Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-envelope"></i>Contact</a>
-                                </li>
-                                <li class="logged_out">
-                                    <a href="#"><i class="fab fa-aws"></i> FAQ</a>
-                                </li> 
-                                <li>
-                                        <a href="#" class="sign_in"><i class="fa fa-blog"></i> Admin</a>
-                                    </li>
-                                <li class="logged_out log_in_list">
-                                    <a class="sign_in" href=""><i class="fa fa-sign-in-alt"></i>  Sign In</a>
-                                </li>
-                                <li class="logged_in" id="logOut">
-                                    <a class="sign_in" href="#"><i class="fa fa-sign-out-alt"></i> Sign Out</a>
-                                 </li>
-                                <li class="logged_out" id="create_Account">
-                                    <a class="sign_in" href=""><i class="fa fa-user-plus"></i> Create Account</a>
-                                </li>
-                            </ul>
+                <nav class="nav nav_hide">
+                  <ul class="nav_ul">
+                        <li class="logged_in dashboard_dropdown">
+                         <a href="#" class="dashboard"><i class="fas fa-database"></i>  Dashboard</a>
+                            <div class="dropdown"></div>
+                         </li>
+                         <li class="logged_in"> <input type="file"  id="user_profile">  </li>
+
+                         <li class="logged_in"> <a href="#"><i class="fa fa-user"></i> User</a> </li>   
+
+                         <li> <a href="#"><i class="fa fa-home"></i> Home</a>  </li>     
+
+                         <li> <a href="#"><i class="fa fa-blog"></i> Blog</a>  </li>
+
+                         <li> <a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+
+                         <li class="logged_out"><a href="#"><i class="fab fa-aws"></i> FAQ</a> </li> 
+
+                         <li class="Moderator_li Moderator"><a href="#" class="sign_in"><i class="fa fa-blog"></i>Moderator</a></li>
+                         <li class="Admin_li Admin_login"><a href="#" class="sign_in"><i class="fa fa-blog"></i> Admin</a></li>
+                         <li class="logged_out log_in_list"><a class="sign_in" href=""><i class="fa fa-sign-in-alt"></i>Sign In</a></li>
+                         <li class="logged_in" id="logOut"><a class="sign_in" href="#"><i class="fa fa-sign-out-alt"></i> Sign Out</a</li>
+
+                         <li class="logged_out" id="create_Account"><a class="sign_in" href=""><i class="fa fa-user-plus"></i>Register</a></li>
+                 </ul>
                              <div class="profile_image_wrapper logged_in">
                                     <img src="" alt="" class="profile_image">
                             </div>
-                        </nav>
+            </nav>
                     </div>
                     <div id="bars_wrap">
                             <div class="bar1 bar"></div>
@@ -73,9 +58,8 @@
                             <div class="bar3 bar"></div>
                     </div>
                 </header>
-            </div>
-            <section class="main_post_Wrapper">
-                <div class="main_post_news">
+
+                    <div class="main_post_news">
                         <div class="posts_blog_content">
                             
                                 <div class="banner_zoom banner_1">
@@ -119,8 +103,6 @@
                                           </div>
                                      </div>
                                 </div>
-                           
-                          
                         </div>
                             <div class="posts_blog aside_1">
                                 <div class="aside_txt_blog">
@@ -147,47 +129,137 @@
                                 </div>
                             </div>
                 </div>
+               
+            </div>
+            <section class="main_post_Wrapper">
+                <!--========================== WELCOME SECTION STARTED==============================-->
+                <div class="welcome_container">
+                        <div class="welcome_text">
+                                <marquee behavior="" direction="" class="high-set">
+                                        <a href="#"><i class="fab fa-facebook"></i> Nigeria have lost</a>   /
+                                        <a href="#">1,960 cases due to</a>   /
+                                        <a href="#">Corona Viru.</a>   /
+                                        <a href="#">Nigeria lost rises due to proper</a>   /
+                                        <a href="#">prevention and precution</a>
+                                        </marquee>
+                            <h2> welcome to Pelvris Blog</h2>
+                            <p>The best Blog  in the world were you can read, and upload  information to the world by just signing up</p>
+                        </div>
+                 </div>
                 <!-- news_Blog_section -->
                 <div class="news_Blog_section">
-                        <div class="single-sidebar-widget p-30">
-                                <!-- Social Followers Info -->
-                                <div class="social-followers-info">
-                                    <!-- Facebook -->
-                                    <a href="#" class="facebook-fans"><i class="fab fa-facebook"></i> 50,000, 000 <span>Fans</span></a>
-                                    <!-- Twitter -->
-                                    <a href="#" class="twitter-followers"><i class="fab fa-twitter"></i> 3, 280, 000 <span>Followers</span></a>
-                                    <!-- YouTube -->
-                                    <a href="#" class="youtube-subscribers"><i class="fab fa-youtube"></i> 5,000,000 <span>Subscribers</span></a>
-                                    <!-- Google -->
-                                    <a href="#" class="google-followers"><i class="fab fa-google-plus"></i> 4,230 <span>Followers</span></a>
+                   
+                      <!--========================== WELCOME SECTION ENDED==============================-->
+                         <div class="addAdmin_panel_section hide_admin">
+                              
+                                <!-- reomve Admin -->
+                             <div class="addAdmin">
+                                <div class="addAdmin_panel_wrapper">
+                                    <h1>Make Admin</h1>
+                                    <form action="" class="Add_admin_panel_form">
+                                        <input type="email" name="admin_input" class="admin_input" placeholder="User Email">
+                                        <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                                            <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                                        </div>
+                                        <button>Make Admin</button>
+                                        <p class="error" style="color:red;"></p>
+                                   </form>
+                                 </div>
+                              </div>
+                         </div>
+
+
+                            <div class="Moderator_section hide_Moderator">
+                                <div>
+                                    <div class="Moderator_wrapper  toggle_Moderator">
+                                        <h1>Remove Moderator</h1>
+                                       <form action="" class="remove_Moderator_form">
+                                          <input type="email" name="Moderator_input" class="Moderator_input" placeholder="User Email">
+                                          <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                                              <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                                          </div>
+                                          <button>Remove Moderator</button>
+                                          <p class="error" style="color:red;"></p>
+                                          <p class="switch_Moderator_form">Instand i want to add Modrator..</p>
+                                      </form>
+                                  </div>
                                 </div>
-                            </div><!--Social Media ICON ended-->
+                                <!-- reomve Admin -->
+                                <div class="Make_Moderator">
+                                  <div class="Moderator_wrapper">
+                                        <h1>Make Moderator</h1>
+                                     <form action="" class="Add_Moderator_form">
+                                        <input type="email" name="Moderator_input" class="Moderator_input" placeholder="User Email">
+                                        <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                                            <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                                        </div>
+                                        <button>Make Moderator</button>
+                                        <p class="error" style="color:red;"></p>
+                                        <p class="switch_Moderator_form">Instand i want to remove Moderator!!! or </p>
+                                        <div class="Remove_Admin_btn">Remove Admin</div>
+                                       
+                                     </form>
+                                 </div>
+                            </div>
 
 
-                            <div class="post_news_wrapper logged_in">
+
+                             <div class="Remove_Admin_form hide_remove_Admin_form">
+                                <div class="addAdmin_panel_wrapper">
+                                    <h1>Remove Admin</h1>
+                                   <form action="" class="remove_admin_panel_form">
+                                      <input type="email" name="admin_input" class="admin_input" placeholder="User Email">
+                                      <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                                        <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                                    </div>
+                                      <button>Remove Admin</button>
+                                      <p class="error" style="color:red;"></p>
+                                      <p class="switch_Moderator_form">Instand i want to Add Moderator.. </p>
+                                      <div class="add_Moderator_btn">Click here</div>
+                                  </form>
+                              </div>
+                             </div>
+                               
+                        </div>
+                    
+                        <div class="notification_wrapper notification_active">
+                            <div class="notification_txt"></div>
+                        </div>
+                            <div class="post_news_wrapper Admin_login">
                                   <form action="" enctype="multipart/form-data" class="form_Post">
-                                    <h1>Your uid Is on Your Dashboard</h1>
-                                   <div class="post_news_flex_form">
                                         <div class="textarea_form">
-                                                <label for="post_Content">Post Content</label>
-    
-                                               <textarea id="post_Content"  placeholder="* MAKE YOUR LATEST POST  HERE" data-rule="required"></textarea>
+                                            
+                                              <label for="post_Content">Post Content</label>
+                                               <textarea id="post_Content" name="textarea"  placeholder="* MAKE YOUR LATEST POST  HERE" data-rule="required"></textarea>
+                                               <p class="textarea_Error hide" id="error"> </p>
                                            </div>
 
                                        <div class="post_title_form">
-                                            <label for="uid">uid</label>
-                                            <input type="text"  id="uid" placeholder="Enter your uid">
-        
-                                            <label for="post_title" class="mar_top">Post Title</label>
-                                            <input type="text"  id="post_title" placeholder="Enter your Post Title">
-        
-                                            <input type="file"  id="file">
-                                            <button class="upload_btn">Upload News</button>
+                                          <div>
+                                                <label for="post_title">Post Title</label>
+                                                <input type="text" name="post_title" id="post_title" placeholder="Enter your Post Title">
+                                                <p class="post_title_Error hide" id="error"> </p>
 
+                                                <input type="file" name="file"  id="file">
+                                                <p class="file_Error hide" id="error"> </p>
+                                                <button class="upload_btn">Upload News</button>
+                                          </div>
+                                          <div>
+                                              <label for="key">key</label>
+                                              <input type="text"  id="uid" name="key" placeholder="Enter Your Dashboard key">
+                                              <p class="uid_Error hide" id="error"> </p>
+                                            
+                                              <div class="newsType_wrap">
+                                                 <!-- <label for="newsType">Please select the news type</label> -->
+                                                <input type="radio" name="newsType" value="Education"> <span>Education</span>
+                                                <input type="radio" name="newsType" value="Government"> <span>Government</span>
+                                                <input type="radio" name="newsType" value="Politics"> <span>Politics</span>
+                                                <input type="radio" name="newsType" value="Heath"> <span>Heath</span>
+                                                <p class="newsType_wrap hide" id="error"> </p>
+                                              </div>
+    
+                                         </div>
                                        </div>
-                                        
-                                   </div>
-
                                   </form>
                                   <div class="loading_hide" id="loader">
                                       <div class="loading_img">
@@ -195,152 +267,164 @@
                                       </div>
                                   </div>
                               </div>
+                              
 
-                                <h1 class="Top_story"> Top Stories Update</h1>
+                    
                     <div class="news_Blog_section_content">
-                        <ul class="news_card_grid" id="news_card">
-                            <li class="news_post_list">
-                                    <div class="news_content">
-                                            <a href="newspage.html" class="card_link">
-                                            <div class="news_photo"><img src="/src/assets/img/skynews-graphic-editorial-5g_4971059_1.jpg" alt=""></div>
-                                                <div class="news_flex_link">
-                                                    <h3 class="blog_title_news">${kelly}</h3>
-                            
-                                                    <div class="blog_content"><p>${content}</p></div>
+     <!-- news_card --> <div class="news_card_grid" id="news_card">
+                            <div id="news_card_grid_wrapper" style="display: block !important;"> <!-- news_card_grid_wrapper -->
+                                 <h1>Education</h1>
+
+                                <ul class="Education" id="append_news_base_on_the_type"><!-- Education -->
+                                    <li class="news_post_list">
+                                        <div class="news_content">
+                                                <a href="newspage.html" class="card_link">
+                                                <div class="news_photo"><img src="/src/assets/img/skynews-graphic-editorial-5g_4971059_1.jpg" alt=""></div>
+                                                    <div class="news_flex_link">
+                                                        <h3 class="blog_title_news">${kelly}</h3>
+                                                        <div class="blog_content"><p>${content}</p></div>
+                                                </div>
+                                                </a>
+                                                <button class="Delete">Delete</button>
+                                         <div class="card_comment">
+                                            <div class="comment_fa">
+                                                        <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
+                                                        <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
+                                                        <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
                                             </div>
-                                            </a>
-                                            <button class="Delete">Delete</button>
-                                        <div class="card_comment">
-                                        <div class="comment_fa">
-                                                    <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
-                                                    <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
-                                                    <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
-                                        </div>
                                             <form action="" class="comment_form" data_id="${data_id}">
                                                 <textarea> Add comments</textarea>
                                                 <button>SUBMIT</button>
                                             </form>
-                                        <div class="comment_view">
-                                        <ul class="comment_view_close" id="comment_ul_view">
-                                        
-                                        </ul>
-                                            <button class="btc_view">VIew Comment</button>
-                                        </div>
-                                    </div>
-                            </li>
-                                 <li class="news_post_list">
-                                    <div class="news_content">
-                                            <a href="newspage.html" class="card_link">
-                                            <div class="news_photo"><img src="/src/assets/img/skynews-coronavirus-turkey_4950361_5.jpg" alt=""></div>
-                                                <div class="news_flex_link">
-                                                    <h3 class="blog_title_news">${kelly}</h3>
-                            
-                                                    <div class="blog_content"><p>${content}</p></div>
+                                            <div class="comment_view">
+                                            <ul class="comment_view_close" id="comment_ul_view">
+                                            </ul>
+                                                <button class="btc_view">VIew Comment</button>
                                             </div>
-                                            </a>
-                                            <button class="Delete">Delete</button>
-                                        <div class="card_comment">
-                                        <div class="comment_fa">
-                                                    <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
-                                                    <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
-                                                    <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
                                         </div>
-                                            <form action="" class="comment_form" data_id="${data_id}">
-                                                <textarea> Add comments</textarea>
-                                                <button>SUBMIT</button>
-                                            </form>
-                                        <div class="comment_view">
-                                        <ul class="comment_view_close" id="comment_ul_view">
-                                        
-                                        </ul>
-                                            <button class="btc_view">VIew Comment</button>
-                                        </div>
-                                    </div>
-                            </li>
-                            <li class="news_post_list">
-                                    <div class="news_content">
-                                            <a href="newspage.html" class="card_link">
-                                            <div class="news_photo"><img src="/src/assets/img/skynews-coronavirus-uk-ambulance-ppe_4972955 _2.jpg" alt=""></div>
-                                                <div class="news_flex_link">
-                                                    <h3 class="blog_title_news">${kelly}</h3>
-                            
-                                                    <div class="blog_content"><p>${content}</p></div>
+                                      <div> 
+                                     </li>
+                                        <li class="news_post_list">
+                                            <div class="news_content">
+                                                    <a href="newspage.html" class="card_link">
+                                                    <div class="news_photo"><img src="/src/assets/img/skynews-coronavirus-turkey_4950361_5.jpg" alt=""></div>
+                                                        <div class="news_flex_link">
+                                                            <h3 class="blog_title_news">${kelly}</h3>
+                                                            <div class="blog_content"><p>${content}</p></div>
+                                                    </div>
+                                                    </a>
+                                                    <button class="Delete">Delete</button>
+                                                <div class="card_comment">
+                                                <div class="comment_fa">
+                                                            <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
+                                                            <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
+                                                            <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
+                                                </div>
+                                                    <form action="" class="comment_form" data_id="${data_id}">
+                                                        <textarea> Add comments</textarea>
+                                                        <button>SUBMIT</button>
+                                                    </form>
+                                                <div class="comment_view">
+                                                 <ul class="comment_view_close" id="comment_ul_view">
+                                                </ul>
+                                                    <button class="btc_view">VIew Comment</button>
+                                                </div>
                                             </div>
-                                            </a>
-                                            <button class="Delete">Delete</button>
-                                        <div class="card_comment">
-                                        <div class="comment_fa">
-                                                    <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
-                                                    <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
-                                                    <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
-                                        </div>
-                                            <form action="" class="comment_form" data_id="${data_id}">
-                                                <textarea> Add comments</textarea>
-                                                <button>SUBMIT</button>
-                                            </form>
-                                        <div class="comment_view">
-                                        <ul class="comment_view_close" id="comment_ul_view">
-                                        
-                                        </ul>
-                                            <button class="btc_view">VIew Comment</button>
+                                          </div>
+                                        </li>
+                                        <li class="news_post_list">
+                                            <div class="news_content">
+                                                    <a href="newspage.html" class="card_link">
+                                                    <div class="news_photo"><img src="/src/assets/img/skynews-coronavirus-uk-ambulance-ppe_4972955 _2.jpg" alt=""></div>
+                                                        <div class="news_flex_link">
+                                                            <h3 class="blog_title_news">${kelly}</h3>
+                                                            <div class="blog_content"><p>${content}</p></div>
+                                                      </div>
+                                                    </a>
+                                                    <button class="Delete">Delete</button>
+                                               <div class="card_comment">
+                                                 <div class="comment_fa">
+                                                            <div><i class=" fa fa-calendar"></i> 2 week ago </div>    
+                                                            <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
+                                                            <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
+                                                </div>
+                                                    <form action="" class="comment_form" data_id="${data_id}">
+                                                        <textarea> Add comments</textarea>
+                                                        <button>SUBMIT</button>
+                                                    </form>
+                                                <div class="comment_view">
+                                                <ul class="comment_view_close" id="comment_ul_view">
+                                                
+                                                </ul>
+                                                    <button class="btc_view">VIew Comment</button>
+                                                </div>
+                                            </div>
+                                         </div>
+                                        </li>
+                                    </ul>
+                            </div>
+                           
+                            <div id="news_card_grid_wrapper"> <!-- news_card_grid_wrapper -->
+                                <h1>Heath</h1>
+
+                                <!-- Heath -->
+                                <ul class="Heath" id="append_news_base_on_the_type"><!-- Heath -->
+                                 </ul>
+                            </div>
+
+                            <div id="news_card_grid_wrapper"> <!-- news_card_grid_wrapper -->
+                                <h1>Politics</h1>
+
+                                <!-- Politics -->
+                                 <ul class="Politics" id="append_news_base_on_the_type"><!-- Politics -->
+                                </ul> 
+                            </div>
+
+                            <div id="news_card_grid_wrapper"> <!-- news_card_grid_wrapper -->
+                                <h1>Government</h1>
+
+                                <!-- Politics -->
+                                <ul class="Government" id="append_news_base_on_the_type"><!-- Government -->
+                                </ul> 
+                            </div>
+                            <!-- video_play_Area -->
+<!-- video_play_Area--> <div class="video_play_Area">
+                            <div class="video_Play_grid">
+                                    <div class="single_video_post">
+                                        <img src="/src/assets/img/video1.jpg" alt="">
+                                        <div class="videobtn">
+                                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
                                         </div>
                                     </div>
-                            </li>
-                          
-                        </ul>
-                        <!-- Get Specail offer -->
-                        <div class="Seacrch_news_info">
-                            <div class="video_play_Area">
-                                <div class="video_Play_grid">
-                                        <div class="single_video_post">
-                                            <img src="/src/assets/img/video1.jpg" alt="">
+                                    <div class="single_video_post">
+                                        <img src="/src/assets/img/video2.jpg" alt="">
+                                            <div class="videobtn">
+                                            <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                            </div>
+                                    </div>
+                                    <div class="single_video_post">
+                                            <img src="/src/assets/img/video3.jpg" alt="">
                                             <div class="videobtn">
                                                 <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
                                             </div>
-                                        </div>
-                                        <div class="single_video_post">
-                                            <img src="/src/assets/img/video2.jpg" alt="">
-                                             <div class="videobtn">
-                                                <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                             </div>
-                                        </div>
-                                        <div class="single_video_post">
-                                                <img src="/src/assets/img/video3.jpg" alt="">
-                                                <div class="videobtn">
-                                                    <a href="https://www.youtube.com/watch?v=5BQr-j3BBzU" class="videoPlayer"><i class="fa fa-play" aria-hidden="true"></i></a>
-                                                </div>
-                                        </div>
-                                </div>
+                                    </div>
                             </div>
-
-
-
+                         </div>
+<!-- news_card_ --> </div>
+ <!--Get Specail --><div class="Seacrch_news_info">
                             <h1>Get Special offer</h1>
                             <div class="feature_Section">
                                     <div class="feature_body_wrapper"> <!-- feature_body_wrapper -->
                                         <div class="feature_body">
-                                                <h4 id="feature">Features</h4>
-                                        <a href="#"> Chelsea won the Europa League on Wednesday.</a>
+                                                <h4 id="feature">Blog Features</h4>
+                                        <a href="/hire.html">More about the developers <mark>Hire it </mark></a>
                                         <div class="feature-fa">
                                             <span>  <i class=" fa fa-calendar" aria-hidden="true"></i>  2 days ago </span>     
                                     </div>
                                     </div>
-                                    <!-- feature_2 -->
-                                    <div class="feature_body">
-                                            <a href="#"> Chelsea won the Europa League on Wednesday.</a>
-                                        <div class="feature-fa">
-                                            <span>  <i class=" fa fa-calendar" aria-hidden="true"></i>  2 days ago </span>     
-                                        </div>
-                                    </div>
+                                    
             
-                                        <!-- feature_3 -->
-                                    <div class="feature_body">
-                                            <a href="#"> Chelsea won the Europa League on Wednesday.</a>
-                                        <div class="feature-fa">
-                                            <span>  <i class=" fa fa-calendar" aria-hidden="true"></i>  2 days ago </span>     
-                                        </div>
-                                    </div>
-                                        <!-- feature_4 -->
+                                        <!-- feature_2 -->
                                         <div class="feature_body">
                                             <a href="#"> Chelsea won the Europa League on Wednesday.</a>
                                         <div class="feature-fa">
@@ -348,11 +432,7 @@
                                         </div>
                                     </div>
                                 </div>  <!-- feature_body_wrapper -->
-                                        
-                                <div class="bet9ja_img">
-                                    
-                                    <img src="/src/assets/img/bet9ja banner.gif" alt="">
-                                </div>
+                                 
                                 <!-- newsletter_widget_wrapper -->
                                 <div class="newsletter_widget_wrapper"><!-- newsletter_widget_wrapper -->
                                     <div class="newsletter_widget">
@@ -366,18 +446,18 @@
                                     </div>
                                    
                                 </div><!-- newsletter_widget_wrapper -->
-                         </div>
-                         <div class="search_container">
+                          </div>
+                            <div class="search_container">
                                 <form action="" id="search_form">
                                     <input type="text" name="search_news" placeholder="Type here for News...">
                                     <button class="btn_seach">SEARCH</button>
                                 </form>
                             </div>
-                        </div>
                     </div>
-                </div>
-            </section>
-         </div>
+            </div>
+          </div>
+        </section>
+       </div>
      </main>
          <div class="get_best_offer">
             <img src="/src/assets/img/footer-add.gif" alt="">
@@ -392,6 +472,10 @@
                 <form action="#" class="register_user">
                     <input type="Email" name="Email"  placeholder="Email">
                     <input type="password" name="Password" placeholder="Password">
+                    <p class="error"></p>
+                    <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                        <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                    </div>
                      <button class="create_user_btn">SIGN UP</button>
                  </form>
                   <p class="text-muted">Already have an account?  <a href="">Sign In Here</a></p>
@@ -408,7 +492,11 @@
                 <form class="logged_in_user">
                     <input  type="Email" name="Email"  placeholder="Email">
                     <input type="password" name="Password" placeholder="Password">
-                     <button class="create_user_btn">SIGN IN</button>
+                    <p class="error"></p>
+                    <div class="load_gif_wrap_hide" id="load_gif_wrap">
+                        <img class="load_gif" src="/src/assets/img/load.gif" alt="">
+                    </div>
+                    <button class="create_user_btn">SIGN IN</button>
                  </form>
                   <p class="text-muted">Create account?  <a href="">Sign up Here</a></p>
                   <p class="text-muted">Any issues reach us on +234 701 389 6845</p>
@@ -515,6 +603,13 @@
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-functions.js"></script>
     <script src="./bundler/js/bundle.js"></script>
 </body>
 </html>
+
+
+
+
+
+

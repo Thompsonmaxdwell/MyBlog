@@ -7,7 +7,8 @@ export const logOut_Event = function(){
 
         logOut.addEventListener('click', (e)=>{
 
-             user_auth.logOut()
+             user_auth.logOut();
+             location = '/index.html'
         });
     }
 

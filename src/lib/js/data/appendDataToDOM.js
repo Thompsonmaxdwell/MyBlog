@@ -1,5 +1,7 @@
     // append data to Dom when it come from Database
-    export const append_list_news  = function(news_img,title, content, data_id){
+    import {db} from '../firebase/initialize_firebase'
+
+    export const append_list_news  = function(news_img,title, content, data_id, post_type){
         let li = document.createElement('li');
         li.setAttribute('data_id' , data_id)
 
@@ -21,7 +23,7 @@
                         <div><i class=" fa fa-eye"> </i> 21 Views</div>                             
                         <div><i class=" fa fa-comments"><span class="number_comment"></span></i> comment</div>
             </div>
-                <form action="" class="comment_form" data_id="${data_id}">
+                <form action="" class="comment_form">
                     <textarea> Add comments</textarea>
                     <button>SUBMIT</button>
                 </form>
@@ -34,5 +36,17 @@
         </div>
        `
         li.innerHTML  = li_content;
-        news_card.insertBefore(li, news_card.firstElementChild); 
+
+       const append_news_base_on_the_type = document.querySelectorAll('#append_news_base_on_the_type');
+
+       append_news_base_on_the_type.forEach(item=>{
+          if(item.className == post_type){
+
+            item.parentElement.style.display = 'block'
+             item.appendChild(li)
+          }
+        })
+
+    
+        
 }
